@@ -1,13 +1,14 @@
 package ma.gstudent.services;
 
-import ma.gstudent.models.Student;
+import ma.gstudent.dtos.Student;
+import ma.gstudent.dtos.StudentDTO;
 
 import java.util.List;
 
 public interface IStudentService {
-    boolean create (Student s);
-    boolean update (Student s);
+    StudentDTO save (StudentDTO dto);
+    StudentDTO update (StudentDTO dto);
     boolean delete (Long id);
-    List<Student>ReadAll();
+    List<StudentDTO>ReadAll();
 
 }

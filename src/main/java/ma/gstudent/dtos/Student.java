@@ -1,4 +1,4 @@
-package ma.gstudent.models;
+package ma.gstudent.dtos;
 
 public class Student {
   private String nom;

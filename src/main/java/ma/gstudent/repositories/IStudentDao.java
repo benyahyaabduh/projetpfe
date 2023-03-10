@@ -1,16 +1,11 @@
 package ma.gstudent.repositories;
-import ma.gstudent.models.Student;
+
+import ma.gstudent.entities.StudentEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
-public interface IStudentDao  {
-    boolean create (Student s);
-    boolean update (Student s);
-    boolean delete (long id);
-    List<Student> ReadAll();
-
-
-
-
+@Repository("repo1")
+public interface IStudentDao extends JpaRepository <StudentEntity,Long> {
 
 }
